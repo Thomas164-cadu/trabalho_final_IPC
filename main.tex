@@ -1,0 +1,180 @@
+\documentclass{article}
+\usepackage[portuguese]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{Uma análise prática sobre o uso de agentes de Inteligência Artifical da Open AI}
+\author{Carlos Eduardo Thomas}
+
+\begin{document}
+\maketitle
+
+\section{Introdução}
+
+\hspace{0.5cm}É inegável o impacto da Inteligência Artifical (IA) na vida das pessoas que utilizam a internet para suas atividades diárias, o Chat-GPT (plataforma de conversação com inteligênca artifial desenvolvida pela Open AI) se tornou um dos maiores aliados para execução de tarefas em diversas áreas. Contudo, o Chat-GPT em sua forma mais natural, em que a pessoa realiza a pergunta a partir de um contexto geral esperando obter a resposta desejada, é só a camada mais superficial do que a ferramenta da Open AI é capaz de realizar. Por isso, o trabalho em questão tem como objetivo entender o uso de agentes de Inteligência Artificial, desde a maneira como estes agentes são configurados até a usabilidade prática deles no dia a dia, afinal os agentes trabalham de forma mais específica e tem um poder muito maior do que o simples chat de IA do dia a dia.
+
+\section{Tema e Problema}
+
+\subsection{Tema}
+
+\hspace{0.5cm}Compreender o uso dos agentes de IA é fundamental para quem está envolvido na computação, pois é uma nova visão acerca das possibilidades e força que possuem as ferramentas já desenvolvidas. A implementação de um agente é de fato um passo além da utilização corriqueira das IA's, exige tanto uma configuração específica como no caso da Open AI, como também uma conta paga para explorarmos ao máximo tais recursos.
+
+\subsection{Problema}
+
+\hspace{0.5cm}Com a chegada das ferramentas de chat de IA, nos atentamos muito as respostas de contextos gerais e limitamos a visão a sempre procurar ferramentas prontas, sendo que os agentes permitem uma customização para resolução de um problema e ainda instigam a produção e pesquisa para configuração da ferramenta para o formato que desejar. As inúmeras ferramentas de chat IA que possuímos hoje, já permitem responder e resolver grande parte dos problemas, mas essa comodidade, diminui o aprofundamento de assuntos e a capacidade de gerar respostas ainda mais precisas.
+
+\section{Revisão Bibliográfica}
+
+\hspace{0.5cm}De acordo com \cite{Mariani2023}, a inteligência artificial conversacional envolve a criação de agentes de software que podem interagir de forma natural com humanos, o trabalho em questão aborda muito os aspectos voltados para os Agentes Conversacionais (CAs), ou seja, abordam muito a importância dos chats de conversação que conhecemos hoje e os caminhos de evolução que poderemos identificar para o futuro. Importante salientar que os CAs evoluíram muito nos últimos anos, tendo agentes específicos já conectados diretamente a plataforma da Open AI, como CAs escolares, de finanças, entre outros exemplos personalizados.
+
+A disseminação da criação de diferentes tipos de IA, com focos específicos e não gerais, é uma realidade que permite a especialização de assuntos inclusive melhorando de certa forma o lado negativo dos CAs mais generalizados que acabam causando uma certa perda de domínio dos conteúdos tratados, com algo mais específico, torna-se mais fácil direcionar, contudo, o problema ainda continua do ponto de vista pessoal, pois o domínio do tema abordado é ainda mais direcionado ao agente, assim como \cite{Sampaio2024} defende em sua argumentação.
+
+É relevante analisarmos como conseguimos trabalhos recentes sobre o assunto em questão, justamente pela febre das IAs que vem ganhando força desde meados de 2021, porém, livros como o do autor \cite{Teahan2010}, já abordam assuntos da relevância de agentes de IA e outros vários aspectos desse contexto em 2010, apontando que inclusive este seria um dos marcos mais importantes para as próximas décadas.
+
+De fato, existem trabalhos que abordam o assunto, mas ainda há uma falta de clareza em como funciona a criação destes agentes no âmbito educacional e pessoal, pensando na possibilidade de gerar agentes auxiliares que funcionam como copilotos de ações a serem realizadas, imagine a situação de criação de um agente para disciplina de Iniciação a Prática Científica, em que todas as dúvidas mais comuns respondidas pelo professor poderiam ser respondidas pelo agente treinado, dando a possibilidade de abordar ainda mais conteúdos da área de conhecimento do professor.
+
+A ferramenta para entendimenta da criação e como funcionam os agentes de IA personalizados já criados será o software de CAs da  OpenAI, pois além da relevência, é um dos canais mais viáveis para mapear estas ações. Essa escolha se deve também com a publicação e versão paga do ChatGPT 4 como aponta o autor \cite{Sampaio2024}.
+
+\section{Justificativa}
+
+\hspace{0.5cm}O trabalho tem como objetivo um maior compreendimento sobre IAs e agentes de inteligência artificial que por alguns autores são chamados de bots acadêmicos. Há também uma visão equivocada sobre o tema, de que se trata de algo muito complexo e fora da realidade, e ainda existe muita resistência no mundo acadêmico por conta justamente da diminuição da propriedade que se tem sobre os assuntos, como já ressaltado por \cite{Sampaio2024}.
+
+O intuito da abordagem para esse maior compreendimento é incentivar mais pesquisas sobre o assunto despertando o interesse na área para além do que vemos na academia, visto que, os agentes especializados, apesar de serem chamados de bots acadêmicos por alguns autores, ainda são muito utilizados de maneira equivocada ou sem ser de forma verdadeiramente efetiva, buscando apenas respostas rápidas.
+
+\section{ Hipóteses e Objetivos}
+
+\subsection{Hipóteses}
+
+\hspace{0.5cm}A primeira Hipótese que estamos buscando validar é analisar os resultados obtidos da conversa com o Chat-GPT na sua forma mais natural, e um agente de conteúdo específico, para validarmos se de fato obteremos uma resposta mais concreta e objetiva. Esta hipótese baseia-se na ideia de que a especialização permite uma adaptação a contextos específicos das tarefas acadêmicas, conforme discutido por \cite{Sampaio2024}.
+
+Também iremos avaliar a qualidade explicativa do tema abordado, visando validar se de fato a utilização de um agente faz diferença nas atividades assim como discutido por \cite{Mariani2023} e \cite{Sampaio2024}. 
+
+Buscaremos entender a viabilidade de implementação de IAs individuais como copilotos a partir de uma necessidade própria, como uma IA pessoal, usando-a como ferramenta de automação para reduzir processos e tempo de execução de atividades como proposto por \cite{Mariani2023}.
+
+\subsection{Objetivos}
+
+\hspace{0.5cm}De maneira geral, o objetivo será compreender a utilização destes agentes e validar a sua implementação e configuração de acordo com a viabilidade do processo. De maneira mais específica, busca-se responder questões de precisão relacionadas a diferentes tipos de chats de conversação, sendo eles especializado e generalista.
+
+Também é visado identificar os benefícios da pesquisa com os agentes de IA, e a simplificação do processo educativo das pesquisas que forem realizadas, fomentando a ideia de ser de fato um auxiliar válido para o dia a dia no que tange a aquisição de conhecimento científico e especializado.
+
+\section{Metodologia}
+
+\hspace{0.5cm}Foram realizadas perguntas sobre o tema da ansiedade (tema muito comum atualmente que possui um agente especializado em psicologia utilizado por mais de 100 mil usuários), para em seguida comparar as respostas entre cada um deles.
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|p{6cm}|p{6cm}|}
+    \hline
+    \textbf{Pergunta 1:} O que é a ansiedade? &
+    \textbf{Pergunta 2:} Como tratar a ansiedade? \\
+    \hline
+   
+    \end{tabular}
+    \caption{Perguntas sobre ansiedade}
+    \label{tab:ansiedade}
+\end{table}
+
+O CA especializado do tema ansiedade possui o nome de: "Therapist - Psychologist (non medical therapy)" e as perguntas foram feitas tanto para o Chat-GPT geral quanto para o agente.
+
+Outro tema abordado foi voltado para área científica, mais específicamente sobre química, o nome do agente utilizado era: "Chemistry Chem". As respostas obtidas também foram comparadas com as devolvidas pelo Chat-GPT em sua forma pura. 
+
+É importante salientar que em ambas as abordagens a resposta foi limitada em até 5 linhas para facilitar uma análise de conteúdo para o artigo em questão.
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|p{6cm}|p{6cm}|}
+    \hline
+    \textbf{Pergunta 01:} Utilidade do gás cloro e 
+    seu elemento químico & 
+    \textbf{Pergunta 02:} Importância do glicogênio 
+    para a vida e sua fórmula \\
+    \hline
+    \end{tabular}
+    \caption{Perguntas sobre química}
+    \label{tab:ia_cloro_glicogenio}
+\end{table}
+
+\section{Desenvolvimento}
+
+\subsection{A relevância do compreendimento entre IA geral e generativa}
+
+\hspace{0.5cm}A análise das diferenças entre a IA geral e a IA generativa é crucial para entender as capacidades e limitações de cada abordagem dentro do campo da inteligência artificial. \cite{Teahan2010} destaca que a avaliação crítica das abordagens atuais permite identificar quais componentes da IA geral podem ser incorporados de forma eficaz nas aplicações de IA específicas, promovendo o desenvolvimento de soluções mais robustas e versáteis.
+
+\cite{Mariani2023} explicam que os agentes conversacionais empoderados por IA generativa possuem uma capacidade única de gerar respostas e conteúdos que se adaptam ao contexto e às necessidades específicas dos usuários. Isso é particularmente relevante em aplicações comerciais, onde a personalização e a eficiência das interações podem melhorar significativamente a experiência do cliente. Por isso é fundamental entender como construir um bom \textit{prompt} (texto em linguagem natural que solicita que a IA generativa execute uma tarefa específica) para se adequar ao melhor algoritmo de IA generativa utilizado.
+
+Adicionalmente, \cite{Sampaio2024} discute a importância dos agentes de IA, bots e GPTs acadêmicos, destacando que a integração dessas tecnologias pode revolucionar a forma como a pesquisa e a produção acadêmica são conduzidas. A capacidade dos agentes de IA generativa de processar grandes volumes de dados e gerar \textit{insights} relevantes pode acelerar significativamente a produção de conhecimento e a colaboração entre pesquisadores. Ao compreender a diferença entre a IA geral e a IA generativa, podemos desenvolver estratégias mais eficazes para a implementação de soluções de IA que atendam às necessidades específicas de cada domínio.
+
+\subsection{Criação de Agentes de IA}
+
+\hspace{0.5cm}Para criação de um agente de IA, primeiro é necessário compreender, do que se trata um agente, e nada mais é do que uma IA treinada com uma base de conhecimento específica em cima do algoritmo base do Chat-GPT (no caso da utilização da ferramenta da OpenAI), e que recebe um \textit{prompt}.
+
+Para isso, precisamos entender também o que á a IA generativa. Trata-se de uma subcategoria da inteligência artificial que se concentra na criação de conteúdos novos e originais, como texto, imagens, música e outros dados complexos, com base em padrões e exemplos existentes. Ela utiliza modelos avançados de aprendizado de máquina, como redes neurais profundas, para gerar dados que se assemelham aos fornecidos durante o treinamento. Segundo \cite{Mariani2023}, os agentes conversacionais empoderados por inteligência artificial, incluindo aqueles baseados em IA generativa, têm o potencial de transformar significativamente a interação entre empresas e clientes, proporcionando respostas mais naturais e contextualmente apropriadas. Em resumo, um nome que se dá para a inteligência por trás do agente desenvolvido.
+
+A criação desse agente poderá se dar por meio de um \textit{framework} fornecido pela versão paga do Chat-GPT 4, que concede acesso a API da OpenAI permitindo a criação destes agentes.
+
+\section{Resultados}
+
+\hspace{0.5cm}É possível observar diferença entre as respostas de Agentes de IA e uma IA geral, onde nitidamente o Agente de IA generativa possui mais contexto e detalha mais sua resposta mesmo com a limitação de linhas. Contudo, a depender de contexto, se a pergunta ainda for generalista apesar de um contexto específico, nota-se uma diferença pequena entre as respostas devolvidas pelas IAs.
+
+\subsection{Resultados perguntas sobre tema psicológico}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|p{4cm}|p{4cm}|p{4cm}|}
+    \hline
+    \textbf{Inteligência artificial} &
+    \textbf{Pergunta 1:} O que é a ansiedade? &
+    \textbf{Pergunta 2:} Como tratar a ansiedade? \\
+    \hline
+    IA geral &
+    Ansiedade é uma resposta natural do corpo ao estresse, caracterizada por sentimentos de preocupação, medo ou apreensão. Pode se manifestar em situações cotidianas ou específicas e, em níveis elevados, pode interferir no bem-estar e nas atividades diárias, sendo considerada um transtorno de ansiedade. &
+    A ansiedade pode ser tratada com terapia cognitivo-comportamental, medicamentos como antidepressivos ou ansiolíticos, e técnicas de relaxamento como meditação e exercícios físicos. Mudanças no estilo de vida, como manter uma alimentação balanceada e um sono adequado, também são importantes. \\
+    \hline
+    Agente de IA generativa &
+    A ansiedade é uma resposta natural do corpo ao estresse, caracterizada por sentimentos de preocupação, nervosismo ou medo. Pode ser uma reação a eventos específicos ou surgir sem motivo aparente. Quando excessiva, pode interferir na vida diária. Você sente que a ansiedade afeta muito a sua rotina? &
+    O tratamento da ansiedade pode incluir terapia cognitivo-comportamental (TCC), medicamentos como ansiolíticos e antidepressivos, e técnicas de relaxamento, como meditação e exercícios físicos. Consultar um profissional de saúde é crucial para um plano personalizado. O que você acha que pode te ajudar mais? \\
+    \hline
+    \end{tabular}
+    \caption{Perguntas e Respostas para IAs sobre ansiedade}
+    \label{tab:ia_ansiedade}
+\end{table}
+
+Nota-se a utilização de termos mais técnicos por parte do Agente, assim como uma preocupação com relação ao questionamento realizado por se tratar de um Agente terapêutico assim como análise de agentes feitas por \cite{Sampaio2024}. O mesmo não pode ser observado na resposta gerada pela IA geral, neste sentido, este agente do Chat-GPT já demonstrou um nível a mais de resposta mesmo com um contexto mais generalista e a limitação do tamanho da resposta, mas é inegável que analisando de forma direta, ambas as respostas ainda possuem semelhança.
+
+\subsection{Resultados para perguntas de cunho mais científico}
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|p{4cm}|p{4cm}|p{4cm}|}
+    \hline
+    \textbf{Inteligência artificial} &
+    \textbf{Pergunta 1:} Utilidade do gás cloro e seu elemento químico &
+    \textbf{Pergunta 2:} Importância do glicogênio para a vida e sua fórmula \\
+    \hline
+    IA geral &
+    O gás cloro (Cl2) é amplamente utilizado como desinfetante e agente branqueador. É essencial no tratamento de água potável e piscinas, eliminando microrganismos nocivos. Na indústria química, é usado na produção de compostos orgânicos, como PVC e solventes. Além disso, o cloro é fundamental na fabricação de papel e têxteis, onde atua como agente branqueador. & 
+    O glicogênio é crucial para a vida, pois armazena glicose, fornecendo energia rápida quando necessário, especialmente durante exercícios e entre refeições. É armazenado principalmente no fígado e músculos, ajudando a manter os níveis de glicose no sangue estáveis. Sua fórmula química é (C6H10O5)n, onde "n" representa o número de unidades de glicose. \\
+    \hline
+    Agente de IA generativa &
+    O cloro (Cl2) é amplamente utilizado como agente desinfetante e purificador, especialmente na água potável e em piscinas. Também é essencial na fabricação de produtos químicos, como o PVC (policloreto de vinila), e em processos de branqueamento de papel e têxteis. Além disso, é usado na produção de solventes, pesticidas e medicamentos. Seu elemento químico, o cloro (Cl), é um halogênio vital para a síntese de muitos compostos orgânicos e inorgânicos. & 
+    O glicogênio é crucial para o armazenamento e liberação rápida de glicose, garantindo energia constante para funções celulares e atividades físicas. Ele é armazenado no fígado e músculos, mantendo a glicemia e fornecendo energia durante o exercício. A fórmula molecular do glicogênio é (C6H10O5)n, onde "n" representa o número de unidades de glicose conectadas. \\
+    \hline
+    \end{tabular}
+    \caption{Perguntas e Respostas das IAs do tema científico}
+    \label{tab:cloro_glicogenio}
+\end{table}
+
+No caso das perguntas científicas, novamente nota-se uma abordagem de siglas (mais técnicas), porém, é nítido a diferenciação entre as respostas no que tange a explicação, em que o Agente por se tratar de algo focado na parte química, se preocupa em explicar todas as substâncias geradas e o que significam estas substâncias, enquanto a IA geral, apesar de fazer este contexto de produtos gerados ela é menos detalhada em relação ao agente, corroborando para o que é tratado por \cite{Sampaio2024}.
+
+\section{Conclusão}
+
+\hspace{0.5cm}Com o presente trabalho, se tornou possível concluir que os Agentes de IA que vem surgindo com o passar dos anos, irão de fato se tornar ainda mais presentes, tanto pela especialização que trazem consigo, como também por serem excelentes na qualidade de suas respostas. É inegável o nível de especialização juntamente com a praticidade que um Agente de IA pode proporcionar, e esta dissertação torna possível compreender de forma superficial os níveis de complexidade envolvidos em uma implementação e também a capacidade generativa das respostas que os Agentes são capazes de retornar.
+
+Contudo, o trabalho também amplia os questionamentos quanto a todo o contexto de criação da IA generativa, mantendo em aberto a possibilidade de trabalhos acerca dos melhores \textit{prompts} para os Agentes, que façam com que as respostas geradas sejam ainda melhores. Assim como, a maneira como deve-se estruturar uma base de conhecimento viável para treinamento do Agente. E ainda, as inúmeras capacidades geracionais específicas que os Agentes podem proporcionar com respostas ainda mais amplas e complexas.
+
+\bibliographystyle{alpha}
+\bibliography{sample}
+
+\end{document}
